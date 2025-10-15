@@ -29,7 +29,7 @@ bool Card::getFaceUp() const {
     return this->isFaceUp; // returns isFaceUp
 }
 
-std::string Card::diplay() const {
+std::string Card::display() const {
     if (!this->isFaceUp) {
         return "X";     // card is face down
     }
@@ -52,5 +52,5 @@ std::string Card::diplay() const {
             valueStr = std::to_string(this->getValue());    // 2-10
     }
 
-    return valueStr + " " + this->getSuit(); // "10H" or "AS"
+    return valueStr + this->getSuit(); // "10H" or "AS"
 }

@@ -22,7 +22,7 @@ private:
 
 public:
     /**
-     * @note parameterized constructor for Card
+     * @note parameterized constructor for Card, face down
      * @param suit must be S, H, C, or D
      * @param value must be between 1 - 13
      */
@@ -55,7 +55,7 @@ public:
      *
      * @return "value""suit"
      */
-    std::string diplay() const;
+    std::string display() const;
 };
 
 
